@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxx")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-xxxxxxxx');
+    meta(charset="utf-8")
+    meta(content="width=device-width,initial-scale=1.0" name="viewport")
+    link(rel="icon" type="image/png" href="/assets/favicon.png")
+    link(href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,900" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="/assets/app.css")
+    block title
+    block ogp
+    style(type="text/css").
+      body {
+        font-family: "Noto Sans JP", sans-serif;
+      }
+  body
+    block content
